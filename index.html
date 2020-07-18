@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Minha agenda</title>
+</head>
+<body>
+    <main>
+        <div class="area-formulario">
+            <div id="conteudo-todo-form">
+                <h2>Crie um Novo Evento:</h2>
+                <form id="formulario" action="">
+                    <fieldset class="itens-form">
+                        <label for="evento">O que?</label>
+                        <input type="text" id="evento" name="evento">
+
+                        <label for="dataEvento">Data</label>
+                        <input type="date" id="dataEvento" name="dataEvento">
+                    
+                        <label for="horaEvento">Horário</label>
+                        <input type="time" id="horaEvento" name="horaEvento">
+            
+                        <label for="localEvento">Local</label>
+                        <input type="text" id="localEvento" name="localEvento">
+                    
+                        <label for="tipoEvento">Qual o tipo de Evento?</label>
+                        <select name="tipoEvento" id="tipoEvento">
+                            <option value="saude">Cuidados com Saúde</option>
+                            <option value="trabalho">Compromissos profissionais</option>
+                            <option value="lazer">Passeios e lazer</option>
+                        </select>
+
+                        <label for="contatos">Marcar contatos</label>
+                        <select name="contatos" id="contatos">
+                            <option value="">INSERIR CONTATOS</option>
+                        </select>
+
+                        <label for="descricao">Descrição</label>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>    
+
+                        <div class="botoes">
+                            <button class="botao1" onclick="eventoController.escondeForm(event)">Fechar</button>    
+                            <button class="botao2" onclick="eventoController.adiciona(event)" type="submit">Salvar Compromisso</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <button class="botaoExibeForm invisivel" onclick="eventoController.exibeForm()">Criar Evento</button>
+        <div class="lista-eventos">
+
+            <table>
+                <caption>Meus Eventos</caption>
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Dia e horário</th>
+                        <th>Local</th>
+                    </tr>
+                    <tr>
+                        <td>exibir compromissos dinamicamente</td> 
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </main>
+
+    <script src="EventoController.js"></script>
+    <script>
+        var eventoController = new EventoController();
+    </script>
+</body>
+</html>

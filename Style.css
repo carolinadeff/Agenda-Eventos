@@ -1,0 +1,103 @@
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.area-formulario{
+    height: 100vh;
+    width: auto;
+    background: hsla(0, 0%, 30%, 0.2);
+    margin: 0;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+}
+
+.area-formulario h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.itens-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+.itens-form label {
+    margin: 20px 0 0 0;
+    text-align: left;
+    color:rgb(59, 59, 59)
+}
+
+.itens-form input, textarea, select {
+    margin: 8px 0;
+    padding: 6px;
+    width: 90%;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.botoes {
+    margin-top: 40px;
+    display: flex;
+    padding-right: 10px;
+    align-content: center;
+    color: gray;
+    
+}
+
+.botao1 {
+    padding: 15px;
+    text-align: center;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    margin-right: 2px;
+    width: 49%;
+    color: rgb(59, 59, 59);
+}
+
+.botao2 {
+    padding: 15px;
+    text-align: center;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 0 5px 5px 0 ;
+    width: 49%;
+    color: rgb(59, 59, 59)
+}
+
+.invisivel{
+    display: none;
+}
+
+/*Tabela eventos*/
+.lista-eventos{
+    display: inline-block;
+    margin: 100px 0 0px 0;
+    padding-left: 430px;
+    padding-top: 50px;
+    height: 80vh;
+    width: 60vw;
+    float: left;
+    border-radius: 0 10px 10px 0;
+    background: hsl(0, 0%, 92%, 0.8);
+}
+
+.botaoExibeForm {
+    position: absolute;
+    padding: 15px;
+    text-align: center;
+    background-color: lightcoral;
+    border-radius: 5px;
+    border: none;
+    top: 20%;
+    left: 130px;
+    height: 70px;
+    width: 100px;
+}
