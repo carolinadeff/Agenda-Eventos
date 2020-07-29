@@ -9,6 +9,7 @@
 </head>
 <body>
     <main>
+        <img src="img/imagemDeFundo.jpg" id="fundo">
         <div class="area-formulario">
             <div id="conteudo-todo-form">
                 <h2>Crie um Novo Evento:</h2>
@@ -33,12 +34,7 @@
                             <option value="lazer">Passeios e lazer</option>
                         </select>
 
-                        <label for="contatos">Marcar contatos</label>
-                        <select name="contatos" id="contatos">
-                            <option value="">INSERIR CONTATOS</option>
-                        </select>
-
-                        <label for="descricao">Descrição</label>
+                        <label for="descricao">Observações</label>
                         <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>    
 
                         <div class="botoes">
@@ -50,26 +46,28 @@
                 </form>
             </div>
         </div>
-        <button class="botaoExibeForm invisivel" onclick="eventoController.exibeForm()">Criar Evento</button>
-        <div class="lista-eventos">
 
-            <table>
-                <caption>Meus Eventos</caption>
-                <thead>
-                    <tr>
-                        <th>Evento</th>
-                        <th>Dia e horário</th>
-                        <th>Local</th>
-                    </tr>
-                    <tr>
-                        <td>exibir compromissos dinamicamente</td> 
-                    </tr>
-                </thead>
-            </table>
+        <button class="botaoExibeForm invisivel" onclick="eventoController.exibeForm()">Criar Evento</button>
+
+        <div class="area">
+
+            <div class="lista-eventos"></div>
+
+            <div class="lista-observacoes">
+                <h3 class="observacoes-titulo">Observacoes</h3>
+                <div class="observacoes"></div>
+            </div>
+            
         </div>
+    
     </main>
 
-    <script src="EventoController.js"></script>
+    <script src="models/Evento.js"></script>
+    <script src="models/ListaEventos.js"></script>
+    <script src="views/EventosView.js"></script>
+    <script src="controllers/EventoController.js"></script>
+    
+    
     <script>
         var eventoController = new EventoController();
     </script>

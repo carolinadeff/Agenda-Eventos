@@ -1,21 +1,35 @@
-main{
+main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.area-formulario{
+#fundo {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100vh;
+
+}
+
+.area-formulario {
     height: 100vh;
     width: auto;
-    background: hsla(0, 0%, 30%, 0.2);
+    background: #F4ECE2;
     margin: 0;
-    display: inline-block;
     padding: 20px;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 10px 15px rgba(50,50,50, 0.4);
+    
 }
+
 
 .area-formulario h2 {
     margin-top: 20px;
     margin-left: 20px;
     font-size: 1.5em;
+    color: #845b4a;
 }
 
 .itens-form{
@@ -27,10 +41,11 @@ main{
     padding: 20px 0;
 }
 
-.itens-form label {
+.itens-form label, input {
     margin: 20px 0 0 0;
     text-align: left;
-    color:rgb(59, 59, 59)
+    color: #845B4A;
+
 }
 
 .itens-form input, textarea, select {
@@ -39,6 +54,7 @@ main{
     width: 90%;
     border: none;
     border-radius: 3px;
+    box-shadow: 0 0 8px 3px rgba(150, 150, 150, 0.2);
 }
 
 
@@ -47,29 +63,30 @@ main{
     display: flex;
     padding-right: 10px;
     align-content: center;
-    color: gray;
     
 }
 
 .botao1 {
     padding: 15px;
     text-align: center;
-    background-color: lightcoral;
+    background-color: #E5A48B;
+    opacity: 90%;
     border: none;
     border-radius: 5px 0 0 5px;
     margin-right: 2px;
     width: 49%;
-    color: rgb(59, 59, 59);
+    color:#44332C;
 }
 
 .botao2 {
     padding: 15px;
     text-align: center;
-    background-color: lightcoral;
+    background-color: #E5A48B;
+    opacity: 90%;
     border: none;
     border-radius: 0 5px 5px 0 ;
     width: 49%;
-    color: rgb(59, 59, 59)
+    color: #44332C;
 }
 
 .invisivel{
@@ -77,27 +94,77 @@ main{
 }
 
 /*Tabela eventos*/
-.lista-eventos{
-    display: inline-block;
-    margin: 100px 0 0px 0;
-    padding-left: 430px;
-    padding-top: 50px;
-    height: 80vh;
-    width: 60vw;
+
+.area {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    bottom: 10vh;
+    right: 20vh;
+    padding: 50px 50px 50px 330px;
     float: left;
-    border-radius: 0 10px 10px 0;
-    background: hsl(0, 0%, 92%, 0.8);
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+    background-color: rgba(244, 236, 226, 0.8);
+    box-shadow: 0 0 15px 5px rgba(100, 100, 100, 0.2);
+    display: flex;
 }
 
 .botaoExibeForm {
     position: absolute;
+    z-index: 2;
     padding: 15px;
     text-align: center;
-    background-color: lightcoral;
+    background-color: #C89581;
+    opacity: 90%;
     border-radius: 5px;
     border: none;
     top: 20%;
     left: 130px;
     height: 70px;
     width: 100px;
+    color: #E5A48B;
 }
+
+.area .lista-eventos {
+    background-color: rgb(244, 236, 226);
+    max-width: 1000px;
+    border-radius: 6px;
+    padding: 40px;
+    align-self: stretch;
+    flex-grow: 1;
+    opacity: 100%;
+    color: #44332C;
+    box-shadow: 0 0 8px 3px rgba(150, 150, 150, 0.2);
+    position: relative;
+    left: 100px;
+    
+}
+
+.lista-eventos table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #44332C;
+
+}
+
+.lista-observacoes {
+    background-color: rgb(244, 236, 226);
+    max-width: 300px;
+    border-radius: 6px;
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    align-self: stretch;
+    flex-grow: 1;
+    position: relative;
+    right: -150px;
+    color: #44332C;
+    box-shadow: 0 0 8px 3px rgba(150, 150, 150, 0.2);
+}
+
+.observacoes-titulo {
+    color: #44332C;
+}
+
