@@ -152,10 +152,10 @@ main {
 .lista-observacoes {
     background-color: rgb(244, 236, 226);
     max-width: 300px;
+    height: fit-content;
     border-radius: 6px;
     padding: 40px;
     margin-top: 80px;
-    margin-bottom: 200px;
     align-self: stretch;
     flex-grow: 1;
     position: relative;
@@ -167,4 +167,124 @@ main {
 .observacoes-titulo {
     color: #44332C;
 }
+
+.observacoes {
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+table caption {
+    color: #845b4a;
+    font-size: 1.3em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+tbody {
+    width: 100%;
+}
+
+table tr {
+    width: 95%;
+    margin: 0.6em 0.1em;
+    padding: 0.4em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+}
+
+
+tr th {
+    width: 32%;
+    color: #845b4a;
+    text-align: center;
+    margin-bottom: 0.6em;
+    margin-right: 5px;
+
+}
+
+tr th:first-child{
+    width: 25%;
+}
+
+tr td {
+    font-size: 0.9em;
+    width: 32%;
+    height: 1.6em;
+    color: #845b4a;
+    text-align: left;
+    margin-right: 5px;
+}
+
+tr td:first-child{
+    width: 25%;
+}
+
+/*Classes dos tipos de eventos*/
+
+.saude {
+    background: rgb(200, 238, 167);
+    border-radius: 6px;
+}
+
+.saude:before {
+    content: "\1F966";
+    margin-right: 10px;
+}
+
+
+.trabalho {
+    background: rgb(231, 231, 231);
+    border-radius: 6px;
+}
+
+.trabalho:before {
+    content: "\1F4BB";
+    margin-right: 10px;
+}
+
+.estudo {
+    background: rgb(231, 231, 231);
+    border-radius: 6px;
+}
+
+.estudo:before {
+    content: "\1F393";
+    margin-right: 10px;
+}
+
+.boleto {
+    background: rgb(200, 238, 167);
+    border-radius: 6px;
+}
+
+.boleto:before {
+    content: "\1F4B8";
+    margin-right: 10px;
+}
+
+.lazer {
+    background: rgb(245, 210, 156);
+    border-radius: 6px;
+}
+
+.lazer:before {
+    content: "\1FA81";
+    margin-right: 10px;
+}
+
+.viagem {
+    background: rgb(245, 210, 156);
+    border-radius: 6px;
+}
+
+.viagem:before {
+    content: "\1F5FA";
+    margin-right: 10px;
+}
+
 

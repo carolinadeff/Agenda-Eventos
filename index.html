@@ -29,9 +29,12 @@
                     
                         <label for="tipoEvento">Qual o tipo de Evento?</label>
                         <select name="tipoEvento" id="tipoEvento">
-                            <option value="saude">Cuidados com Saúde</option>
+                            <option value="saude">Cuidados com a Saúde</option>
                             <option value="trabalho">Compromissos profissionais</option>
+                            <option value="estudo">Compromissos estudantis</option>
+                            <option value="boleto">Pagamentos e Boletos</option>
                             <option value="lazer">Passeios e lazer</option>
+                            <option value="viagem">Viagens!</option>
                         </select>
 
                         <label for="descricao">Observações</label>
@@ -65,6 +68,7 @@
     <script src="models/Evento.js"></script>
     <script src="models/ListaEventos.js"></script>
     <script src="views/EventosView.js"></script>
+    <script src="helpers/DateHelper.js"></script>
     <script src="controllers/EventoController.js"></script>
     
     

@@ -10,6 +10,7 @@ class EventoController {
                this._eventosView.exibeObservacao(this._listaEventos.listaEventos[e.target.classList[0]])
         });
 
+        this._eventosView.update(this._listaEventos);
     }
 
     adiciona(event){
@@ -19,8 +20,6 @@ class EventoController {
         this._listaEventos.adiciona(novoEvento);
         this._eventosView.update(this._listaEventos);
         this._form.reset();
-
-        this._eventosView.exibeObservacao(this._listaEventos)
     }
 
 
