@@ -1,13 +1,13 @@
 class Evento {
 
-    constructor(form){
+    constructor(evento, data, hora, local, tipo, observacoes){
 
-        this._evento = form.evento.value;
-        this._data = form.dataEvento.value;
-        this._hora = form.horaEvento.value;
-        this._local = form.localEvento.value;
-        this._tipo = form.tipoEvento.value;
-        this._observacoes = form.descricao.value;
+        this._evento = evento;
+        this._data = data;
+        this._hora = hora;
+        this._local = local;
+        this._tipo = tipo;
+        this._observacoes = observacoes;
         
     }
 
