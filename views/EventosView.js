@@ -15,16 +15,24 @@ class EventosView {
                         <th>Evento</th>
                         <th>Data e hora</th>
                         <th>Local</th>
-                    </tr>              
+                    </tr>
+                </tbody>
+        </table>
+
+        <div class="conteudo-tabela">
+            <table>
+                <tbody>
                     ${model.listaEventos.map(evento => `
                         <tr class="${evento.tipo}">
                             <td class="${model.listaEventos.indexOf(evento)}">${evento.evento}</td>
                             <td class="${model.listaEventos.indexOf(evento)}">${DateHelper.VisualizacaoData1(evento.data)}</td>
                             <td class="${model.listaEventos.indexOf(evento)}">${evento.local}</td>
+                            <td class="selecao ${model.listaEventos.indexOf(evento)}"><input type="radio" name="selecao"></td>
                         </tr>
                         `).join(``)}
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
         `;
     }
 

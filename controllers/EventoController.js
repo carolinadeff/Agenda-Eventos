@@ -20,6 +20,7 @@ class EventoController {
                 this._eventosView.exibeObservacao(this._listaEventos.listaEventos[e.target.classList[0]])
         });
 
+
         this._service.lista()
             .then(eventos => {
                 eventos.forEach(evento => this._listaEventos.adiciona(evento))
@@ -49,19 +50,14 @@ class EventoController {
                 //this._mensagem.texto = erro
                 //this._mensagemView.update(this._mensagem)
             })
+    }
+    
 
+    editarEvento(indice){
 
     }
 
-    apagarEventosSelecionados(arraydeindices){
-
-    }
-
-    editarEventoSelecionado(indice){
-
-    }
-
-    apagarEventosPassados(){
+    apagarEvento(){
 
     }
 

@@ -9,7 +9,9 @@
 </head>
 <body>
     <main>
+
         <img src="img/imagemDeFundo.jpg" id="fundo">
+        
         <div class="area-formulario">
             <div id="conteudo-todo-form">
                 <h2>Crie um Novo Evento:</h2>
@@ -50,7 +52,40 @@
             </div>
         </div>
 
-        <button class="botaoExibeForm invisivel" onclick="eventoController.exibeForm()">Criar Evento</button>
+        <div id="botoes-edicao">
+            
+            <div class="botoes-edicao-filtra">
+            <label for="tipoEvento">Filtrar por tipo de evento:</label>
+                <select name="tipoEvento" id="tipoEvento">
+                    <option value="saude">Cuidados com a Saúde</option>
+                    <option value="trabalho">Compromissos profissionais</option>
+                    <option value="estudo">Compromissos estudantis</option>
+                    <option value="boleto">Pagamentos e Boletos</option>
+                    <option value="lazer">Passeios e lazer</option>
+                    <option value="viagem">Viagens!</option>
+                </select>
+
+                <div class="botoes-filtro">
+                    <button class="botaoFiltra">Filtrar</button>
+                    <button class="botaoLimpa">Limpar</button>
+                </div>
+            </div>
+
+            <div class="botoes-edicao-editadeleta">
+                <h3>Evento Selecionado:</h3>
+                <div class="botoes-so">
+                    <button class="botaoEdicao">Editar</button>
+                    <button class="botaoDelecao">Excluir</button>
+                </div>
+            </div> 
+
+            <div class="botoes-limpaAgenda-ExibeForm">
+                <button class="botaoExibeForm" onclick="eventoController.exibeForm()">Criar Evento</button>
+                <button class="limparAgenda">Limpar Agenda</button>
+            </div>
+
+        </div>
+
 
         <div class="area">
 
